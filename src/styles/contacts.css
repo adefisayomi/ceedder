@@ -1,0 +1,70 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+.contacts__ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+.contacts__ span {
+    height: 1px;
+    width: 70%;
+    background-color: rgb(122, 121, 121);
+}
+
+/* clients section */
+.clients{
+    max-height: 90vh;
+}
+.clients__list{
+    transition: 0.04s;
+}
+
+.clients__list:hover{
+transform: translateX(5px);
+transition: 0.4s;
+background-color: rgba(236, 235, 235, 0.411);
+}
+@media screen and (max-width: 600px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 80%;
+    }
+    .contacts__ {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .contacts__ span {
+       display: none;
+    }
+    
+    /* clients section */
+    .clients{
+        height: 100vh;
+        background-color: white;
+        padding: 20px 10px;
+        color: black;
+    }
+    .clients__list{
+        transition: 0.04s;
+        border-radius: 10px;
+    }
+    
+    .clients__list:hover{
+    transform: translateX(5px);
+    transition: 0.4s;
+    background-color: black;
+    color: white;
+    }
+}

@@ -1,0 +1,33 @@
+.upload__wrapper{
+    width: 100%;
+    height: 100%;
+}
+.upload{
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload__details {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+flex-direction: column;
+width: 100%;
+}
+.upload__details input {
+    padding: 7px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid var(--border);
+    margin-right: 5px;
+}
+.upload__details textarea {
+    padding: 7px;
+    outline: none;
+    border-radius: 0;
+    flex: 1 1;
+    border: 1px solid var(--border);
+}

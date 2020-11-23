@@ -1,0 +1,32 @@
+{
+  "name": "ceder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "antd-img-crop": "^3.13.2",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "croppie": "^2.6.5",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express-session": "^1.17.1",
+    "firebase-admin": "^9.4.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "moment": "^2.29.1",
+    "next": "10.0.0",
+    "nodemon": "^2.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1"
+  }
+}

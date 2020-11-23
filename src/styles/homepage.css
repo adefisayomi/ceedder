@@ -1,0 +1,7 @@
+.homepage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}

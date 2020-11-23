@@ -1,0 +1,109 @@
+.edit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.edit__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex: 1 1;
+    width: 100%;
+}
+.edit__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(6, 170, 247);
+}
+.edit__header__picture {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+.edit__header__picture img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid rgb(161, 160, 160);
+}
+/* customized upload button */
+#inputFile{
+    display: none;
+}
+.edit__fileButton label {
+    cursor: pointer;
+}
+
+/* body section */
+.edit__body span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.edit__body span p {
+    width: 120px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.edit__body .edit__body__container{
+    width: 100%;
+}
+.edit__body .textArea {
+    display: flex;
+    align-items: flex-start;
+}
+.edit__body .textArea p {
+    padding-top: 3px;
+}
+
+.edit__body .textArea textarea{
+    width: 100%;
+    border: 0.5px solid var(--border);
+    min-height: 60px;
+    border-radius: 3px;
+    padding: 5px;
+    resize: vertical;
+    outline: none;
+}
+
+.edit__body__profile {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .edit{
+        padding: 10px;
+    }
+    .edit__body span {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    .edit__body span p {
+        font-size: 12px;
+        width: 90px;
+    }
+    .edit__body__profile {
+    border-bottom: 0.5px solid rgb(78, 78, 78);
+    }
+   
+    .edit__body .textArea textarea{
+        min-height: 60px;
+        border-radius: 3px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+   
+}

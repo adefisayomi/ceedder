@@ -1,0 +1,34 @@
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery__tile {
+    display: flex;
+    flex: 1 1 calc(100%/3);
+    max-width: calc(100%/3);
+    padding: 2px;
+    height: 250px;
+}
+.gallery__tile img {
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 750px) {
+    .gallery__tile {
+        height: 230px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery__tile {
+        height: 150px;
+        padding: 1.5px;
+    }
+}
+@media screen and (max-width: 400px){
+    
+    .gallery__tile {
+        height: 100px;
+        padding: 1.5px;
+    }
+}

@@ -1,0 +1,58 @@
+.editlayout__wrapper{
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+}
+.editLayout {
+    width: 100%;
+    max-width: 900px;
+    min-height: 80vh;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+
+    border: 0.5px solid var(--border);
+    border-radius: 5px;
+}
+.editLayout__aside{
+    min-width: 220px;
+    border-right: 0.5px solid var(--border);
+}
+.editLayout__aside ul {
+    display: flex;
+    flex-direction: column;
+}
+.editLayout__aside ul li {
+    padding: 20px 30px;
+    border-bottom: 0.5px solid var(--border);
+    color: rgba(112, 112, 112, 0.795);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+.editLayout__aside ul li:hover{
+    border-left: 2px solid rgb(80, 80, 80);
+}
+
+.editLayout__main {
+    margin: 0 auto;
+    padding: 10px 10px 50px 10px;
+    width: 100%;
+}
+.editLayout__navSection {
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .editLayout__main {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 2px 50px 2px;
+        width: 100%;
+    }
+    .editLayout__aside{
+        display: none;
+    }
+}

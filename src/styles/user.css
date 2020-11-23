@@ -1,0 +1,110 @@
+.user {
+    width: 100%;
+    background-color: var(--bgColor);
+}
+
+.user__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+.user__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.user__profile__picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.user__profile__picture div {
+    flex: 1 1 100%;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.user__profile__picture div img {
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid rgb(13, 85, 139);
+    border-radius: 100%;
+}
+.user__profile__picture span{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user__settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex: 1;
+}
+.user__settings h1 {
+    margin-right: 20px;
+    margin-bottom: -2px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.user__follower{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.user__follower span {
+    padding: 0 10px;
+}
+.user__gallery {
+    width: 100%;
+    margin: auto;
+}
+@media screen and (max-width: 700px) {
+    .user__profile__picture{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 650px) {
+    
+    .user__profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .user__profile__picture{
+        margin-right: 0;
+    }
+    .user__settings{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px auto 0 auto;
+        width: 70%;
+    }
+    .user__settings h1 {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .user__body {
+        padding: 0;
+    }
+}

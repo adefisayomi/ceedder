@@ -1,0 +1,82 @@
+.post {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--border);
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.post__header{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 0.5px solid var(--border);
+}
+.post__header .profilePicture{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.post__header .profilePicture img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid grey;
+}
+.post__header .post__username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+}
+.post__product {
+    width: 100%;
+}
+.post__product img{
+    width: 100%;
+    object-fit: cover;
+}
+.post__action__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.post__action__buttons .post__comment {
+    flex: 0.4;
+}
+.post__commentFeeds {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    font-size: 13px;
+}
+.post__commentFeeds span {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 119, 255);
+    padding-right: 5px;
+}
+.post__commentForm {
+    display: flex;
+    align-items: center;
+    border-top: 0.5px solid var(--border);
+    padding: 10px;
+}
+.post__commentForm textarea {
+    flex: 1 1;
+    border: none;
+    min-height: 40px;
+    outline: none;
+    resize: none;
+    font-size: 13px;
+    color: rgb(156, 155, 155);
+    background: none;
+}
